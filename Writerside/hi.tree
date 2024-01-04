@@ -7,7 +7,24 @@
                  start-page="Default-topic.md">
 
     <toc-element topic="Default-topic.md"/>
+    <toc-element topic="Database.md">
+        <toc-element topic="SQL-레벨업.md"/>
+        <toc-element topic="인덱스를-통한-성능-개선.md"/>
+    </toc-element>
+    <toc-element topic="Kafka.md">
+        <toc-element topic="1-Kafka-이론.md"/>
+        <toc-element topic="2-카프카-docker-compose-세팅-명령어.md"/>
+        <toc-element topic="3-카프카-프로듀서-구현.md"/>
+        <toc-element topic="4-카프카-컨슈머-구현.md"/>
+        <toc-element topic="5-스프링-카프카-동작-원리.md"/>
+        <toc-element topic="6-멀티-컨슈머-구현.md"/>
+        <toc-element topic="번외-auto-commit-reset-알아보기.md"/>
+        <toc-element topic="번외-카프카-테스트-코드-예제.md"/>
+        <toc-element topic="번외-스프링에서-컨슈머를-조건부로-사용하고-싶다면.md"/>
+    </toc-element>
     <toc-element topic="Spring.md">
+        <toc-element topic="Validation.md"/>
+        <toc-element topic="ExceptionHandler.md"/>
         <toc-element topic="Conditional-학습-테스트-만들어보기.md"/>
     </toc-element>
 </instance-profile>
