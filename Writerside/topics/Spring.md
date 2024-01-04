@@ -1,3 +1,1 @@
 # Spring
-
-Start typing here...
