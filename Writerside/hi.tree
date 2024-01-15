@@ -10,6 +10,7 @@
     <toc-element topic="Database.md">
         <toc-element topic="SQL-레벨업.md"/>
         <toc-element topic="인덱스를-통한-성능-개선.md"/>
+        <toc-element topic="업데이트-쿼리-성능-개선기.md"/>
     </toc-element>
     <toc-element topic="Kafka.md">
         <toc-element topic="1-Kafka-이론.md"/>
