@@ -28,6 +28,6 @@
         <toc-element topic="Validation.md"/>
         <toc-element topic="ExceptionHandler.md"/>
         <toc-element topic="Conditional-학습-테스트-만들어보기.md"/>
-        <toc-element topic="자바 &amp; 스프링의 비동기 기술.md"/>
+        <toc-element topic="자바와 스프링의 비동기 기술.md"/>
     </toc-element>
 </instance-profile>
