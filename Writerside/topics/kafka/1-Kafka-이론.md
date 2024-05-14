@@ -7,7 +7,7 @@
 
 ## 구조
 
-<img src="../images/kafka/structure.png" alt="img" style="zoom:80%;" />
+<img src="../../images/kafka/structure.png" alt="img" style="zoom:80%;" />
 
 - Broker
 
@@ -52,7 +52,7 @@
 - 컨슈머는 오프셋 기준으로 메시지를 순서대로 읽는다.
 - 메시지는 읽어진다고 삭제되지 않으며 설정에 따라 일정 시간이 지난 뒤에 삭제된다.
 
-<img src="../images/kafka/topic-partition.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/topic-partition.png" alt="img" style="zoom:60%;" />
 
 ### 하나의 토픽이 여러 파티션을 구성하는 이유
 
@@ -83,11 +83,11 @@
 
 키 방식의 경우, 프로듀서가 카프카에 메시지를 전송할 때 토픽뿐만 아니라 키를 지정할 수 있다. 이 때, 키의 해시값을 이용해 저장할 토픽을 선택한다. 같은 키에 대해서는 메시지 순서가 유지된다.
 
-<img src="../images/kafka/producer-partitions.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/producer-partitions.png" alt="img" style="zoom:60%;" />
 
 #### 흐름
 
-<img src="../images/kafka/producer-flow.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/producer-flow.png" alt="img" style="zoom:60%;" />
 
 프로듀서 애플리케이션에서 send() 메소드를 통해 메시지를 보내면 직렬화 -> 파티션 결정 -> 메시지 배치 적재 -> Sender 순으로 전송된다.
 
@@ -218,7 +218,7 @@ Buffer에 메시지를 적해하는 쓰레드와 Sender로 메시지를 전송�
 
 #### 재시도와 메시지 중복 전송 가능성
 
-<img src="../images/kafka/producer-retry.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/producer-retry.png" alt="img" style="zoom:60%;" />
 
 브로커 응답이 늦게 와서 재시도할 경우 중복 발생 가능성이 있다.
 
@@ -248,7 +248,7 @@ enable.idempotence 속성을 이용하여 개선 가능
 
 즉, 컨슈머 그룹에 속한 컨슈머는 파티션을 공유할 수 없으며 하나의 컨슈머 그룹 내에서는 파티션의 메시지가 순차적으로 처리됨을 보장한다.
 
-<img src="../images/kafka/consumer-group.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/consumer-group.png" alt="img" style="zoom:60%;" />
 
 위 그림을 예로 보면, 컨슈머 0에서 이미 연결했기 때문에 컨슈머 1은 파티션 0과 연결할 수 없다. 컨슈머 2는 파티션 2, 3과 연결된 것처럼 하나의 컨슈머가 여러 파티션과 연결할 수 있다.
 
@@ -270,7 +270,7 @@ enable.idempotence 속성을 이용하여 개선 가능
 
 #### Commit & Offset
 
-<img src="../images/kafka/consumer-commit-offset.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/consumer-commit-offset.png" alt="img" style="zoom:60%;" />
 
 컨슈머는 커밋된 오프셋으로 어떤 레코드부터 읽어야 할 지를 확인하고 가져온다.
 
