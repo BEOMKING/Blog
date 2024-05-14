@@ -60,7 +60,7 @@ class ConditionalTrueTest {
 
 `@TestPropertySource(properties = "product.premium.purchase=true")` 으로 해당 테스트에 사용할 키값을 등록해서 사용할 수 있다.
 
-![image-20231114132639909](../images/spring/conditional-true.png)
+![image-20231114132639909](../../images/spring/conditional-true.png)
 
 그런데 반대의 경우 `@TestPropertySource(properties = "product.premium.purchase=false")`는 위 테스트를 그대로 사용할 수는 없다. 빈이 생성되지 않으니 자동 주입을 받을 시점에 빈을 찾을 수 없다는 에러가 나오기 때문이다.
 
@@ -116,7 +116,7 @@ class ConditionalAndExpressionTest {
 }
 ```
 
-![image-20231114135234354](../images/spring/applicationcontextrunner.png)
+![image-20231114135234354](../../images/spring/applicationcontextrunner.png)
 
 `ApplicationContextRunner contextRunner = new ApplicationContextRunner()
 .withConfiguration(UserConfigurations.of(ConditionalConfig.class));` 을 통해 테스트하고자 하는 구성을 등록한다.

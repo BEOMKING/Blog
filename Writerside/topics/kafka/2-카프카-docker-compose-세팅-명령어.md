@@ -101,4 +101,4 @@ $ kafka-console-consumer --bootstrap-server {ip:port} --topic {topic-name} --fro
 ```
 아래는 간단하게 하나의 Producer에서 2개의 Consumer에 메시지를 전송하는 예제이다.
 
-<img src="../images/kafka/producer-consumer-test.png" alt="img" style="zoom:80%;" />
+<img src="../../images/kafka/producer-consumer-test.png" alt="img" style="zoom:80%;" />

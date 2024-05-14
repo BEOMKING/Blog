@@ -128,7 +128,7 @@ public class ErrorResponse {
 
 하지만 이 응답은 우리가 따로 만들어준 적이 없다. 이 응답은 다음과 같은 과정을 통해 생성된다.
 
-<img src="../images/spring/basic-error.png" alt="img" style="zoom:45%;" />
+<img src="../../images/spring/basic-error.png" alt="img" style="zoom:45%;" />
 
 처음 API 콜을 통해 컨트롤러에 전달이되고 해당 컨트롤러의 로직이 수행되다 예외가 발생한다. 이후 WAS에 예외가 전달되면 WAS에서 `/error`로 다시 호출한다.
 
@@ -176,7 +176,7 @@ public class ErrorResponse {
 
 > `ResponseStatusException`은 주로 개발자가 변경할 수 없는 빌트인 or 라이브러리 예외를 변경하기 위해 사용한다.
 
-<img src="../images/spring/response-status.png" alt="img" style="zoom:45%;" />
+<img src="../../images/spring/response-status.png" alt="img" style="zoom:45%;" />
 
 `response.sendError()`를 호출하는데 이 메서드를 수행하면 WAS에서 다시 오류 처리 요청(`/error`)을 보낸다.
 
@@ -186,7 +186,7 @@ public class ErrorResponse {
 
 우리가 `Integer`필드에 문자열을 넣어서 요청을 하면 500이 아닌 400 응답이 온다. 이 과정이 `DefaultHandlerExceptionResolver`의 로직이 수행된 결과이다.
 
-<img src="../images/spring/default-handler.png" alt="img" style="zoom:45%;" />
+<img src="../../images/spring/default-handler.png" alt="img" style="zoom:45%;" />
 
 필드 타입 예외로 TypeMismatchException이 발생한다. `DefaultHandlerExceptionResolver.doResolveException()`가 이 예외를 잡아 400 응답을 주도록 변경해주는 것이다.
 
@@ -202,7 +202,7 @@ public class ErrorResponse {
 
 동작 방식이 다음 그림과 같이 간소화 되었다.
 
-<img src="../images/spring/exception-error.png" alt="img" style="zoom:45%;" />
+<img src="../../images/spring/exception-error.png" alt="img" style="zoom:45%;" />
 
 > 동작 원리까지 알아보았으니 [첫 번째 예제](#공통-예외-처리)의 실행 흐름에 대해 알아보자.
 >

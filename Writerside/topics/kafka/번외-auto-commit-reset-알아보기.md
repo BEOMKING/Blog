@@ -38,7 +38,7 @@
 이에 대한 테스트를 해보았다.
 
 ## 테스트
-<img src="../images/kafka/initial offset.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/initial%20offset.png" alt="img" style="zoom:60%;" />
 
 모든 테스트는 위 그룹에 5번의 메시지를 전송하고 컨슈머를 종료시키고 5번의 메시지를 추가로 전송하고 재시작하는 방식으로 진행했다.
 
@@ -62,11 +62,11 @@ public class ExampleConsumer {
 
 실행 후 5개의 메시지를 전송한다.
 
-<img src="../images/kafka/initial message.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/initial%20message.png" alt="img" style="zoom:60%;" />
 
 여기서 종료 시키고 5번의 메시지를 추가로 전송하고 다시 컨슈머를 실행했다.
 
-<img src="../images/kafka/latest same group.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/latest%20same%20group.png" alt="img" style="zoom:60%;" />
 
 오프셋 5번부터의 메시지를 모두 가져온 것을 확인할 수 있다.
 
@@ -74,11 +74,11 @@ public class ExampleConsumer {
 
 group-1 실행 후 5개의 메시지를 전송한다.
 
-<img src="../images/kafka/latest another group init.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/latest%20another%20group%20init.png" alt="img" style="zoom:60%;" />
 
 추가적으로 5개의 메시지를 더 보내고 그룹을 group-2 로 바꾸어 재시작한다.
 
-<img src="../images/kafka/latest another group after.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/latest%20another%20group%20after.png" alt="img" style="zoom:60%;" />
 
 아무런 메시지도 가져오지 않아서 임의로 하나를 추가로 전송했다.
 
@@ -102,7 +102,7 @@ group-1 실행 후 5개의 메시지를 전송한다.
 
 종료 시키고 5번의 메시지를 추가로 전송하고 다시 컨슈머를 실행했다.
 
-<img src="../images/kafka/earliest same group after.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/earliest%20same%20group%20after.png" alt="img" style="zoom:60%;" />
 
 커밋된 오프셋이 있기 때문에 5번부터 가져오는 것을 확인할 수 있다.
 
@@ -112,7 +112,7 @@ group-1 실행 후 5개의 메시지를 전송한다.
 
 추가적으로 5개의 메시지를 더 보내고 그룹을 group-2 로 바꾸어 재시작한다.
 
-<img src="../images/kafka/earliest another group after.png" alt="img" style="zoom:60%;" />
+<img src="../../images/kafka/earliest%20another%20group%20after.png" alt="img" style="zoom:60%;" />
 
 커밋된 오프셋이 없고 시작 시점에 바로 오프셋 0부터 가져오는 것을 확인할 수 있다.
 
